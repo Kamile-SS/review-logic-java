@@ -22,7 +22,7 @@ Basicamente é a forma como seu programa recebe informações **(entrada)** e co
 
     ## ✅ Métodos printf()
 
-    O método system.out.printf() mostra os dados na saída formatados. Um especificados de formato se inicia com o simbolo %, seguido por um caractere que representa um tipo de dado.
+    O método system.out.printf() mostra os dados na saída formatados. Um especificador de formato se inicia com o simbolo %, seguido por um caractere que representa um tipo de dado.
 
     **Exemplos:**
 
@@ -33,8 +33,17 @@ Basicamente é a forma como seu programa recebe informações **(entrada)** e co
     char gremio = 'G';
 
      System.out.printf("Numero = %.2f%n", numDecimal);
-     System.out.printf("MinhaIdade = %.2f%n", minhaIdade);
-     System.out.printf("Meu Nome = %.2f%n", meuNome);
-     System.out.printf("Primeira Letra = %.2f%n", gremio);
-
+     System.out.printf("MinhaIdade = %.2d%n", minhaIdade);
+     System.out.printf("Meu Nome = %.2s%n", meuNome);
+     System.out.printf("Primeira Letra = %C", gremio);
      ```
+
+    ## ✅ Métodos print()
+
+    O método **system.out.print()** gera uma sring de texto, mas diferente do método printl(), não cria uma nova linha abaixo da atual, deixando o cursor na mesma linha.
+
+    **Exemplos:**
+    ```
+    System.out.print(O grêmio vai sair campeão);
+    System.out.print(E o inter não);
+    ```
